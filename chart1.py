@@ -10,30 +10,29 @@ with open('altuve2020.json', 'r') as altuve_2020:
 cheat = json.loads(whenhecheat)
 nocheat = json.loads(whenhenocheat)
 
-sabermetrics = {}
-sabermetrics['BA'] = cheat['avg']
-sabermetrics['OBP'] = cheat['obp']
-sabermetrics['SLG'] = cheat['slg']
-sabermetrics['OPS'] = cheat['obp']
+altuvestats = {}
+altuvestats['BA'] = cheat['avg']
+altuvestats['OBP'] = cheat['obp']
+altuvestats['SLG'] = cheat['slg']
+altuvestats['OPS'] = cheat['obp']
 
-sabermetrics1 = {}
-sabermetrics1['BA'] = nocheat['avg']
-sabermetrics1['OBP'] = nocheat['obp']
-sabermetrics1['SLG'] = nocheat['slg']
-sabermetrics1['OPS'] = nocheat['obp']
+altuvestats1 = {}
+altuvestats1['BA'] = nocheat['avg']
+altuvestats1['OBP'] = nocheat['obp']
+altuvestats1['SLG'] = nocheat['slg']
+altuvestats1['OPS'] = nocheat['obp']
 
 width = 0.35
-x = np.arange(len(sabermetrics.keys()))
+x = np.arange(len(altuvestats.keys()))
 fig, ax = plt.subplots()
-rects1 = ax.bar(x - width/2, sabermetrics.values(), width, label='cheat',color='red')
-rects2 = ax.bar(x + width/2, sabermetrics1.values(), width, label='nocheat',color='green')
+rects1 = ax.bar(x - width/2, altuvestats.values(), width, label='cheat',color='red')
+rects2 = ax.bar(x + width/2, altuvestats1.values(), width, label='nocheat',color='green')
 
-ax.set_xlabel('Core Hitting Stat Categories')
+ax.set_xlabel('Hitting Measures')
 ax.set_ylabel('Statistics')
 ax.set_xticks(x)
-ax.set_xticklabels(sabermetrics.keys())
+ax.set_xticklabels(altuvestats.keys())
 ax.legend()
 plt.title("Jose Altuve's Hitting Stats - 2017 vs. 2020")
-params['font.family'] = 'fantasy'
 
 plt.show()
