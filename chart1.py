@@ -22,7 +22,7 @@ altuvestats1['OBP'] = nocheat['obp']
 altuvestats1['SLG'] = nocheat['slg']
 altuvestats1['OPS'] = nocheat['obp']
 
-width = 0.35
+width = 0.4
 x = np.arange(len(altuvestats.keys()))
 fig, ax = plt.subplots()
 rects1 = ax.bar(x - width/2, altuvestats.values(), width, label='cheat',color='red')
