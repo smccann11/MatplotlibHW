@@ -9,6 +9,6 @@ I found my MLB data [HERE!](https://appac.github.io/mlb-data-api-docs/).
 ## Car Producers' Miles Per Gallon
 ![CARMPG](Figure_2.png)
 
-**My Graph**: This dot plot shows the miles per gallon each car producer averages. At the top is Honda, the most efficient car producer as far as MPG on highway goes. The least efficient is Lincoln. I have a Jeep, which isn't a very efficient car as shwon on this plot.
+**My Graph**: This dot plot shows the miles per gallon each car producer averages. At the top is Honda, the most efficient car producer as far as MPG on highway goes. The least efficient is Lincoln. I have a Jeep, which isn't a very efficient car as shown on this plot.
 
 I found my MPG data [HERE!](https://raw.githubusercontent.com/selva86/datasets/master/mpg_ggplot2.csv).
